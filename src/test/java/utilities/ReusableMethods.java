@@ -33,7 +33,7 @@ public class ReusableMethods {
         List<String> stringList = new ArrayList<>();
 
         for (WebElement eachElement : webElementList
-        ) {
+             ) {
 
             stringList.add(eachElement.getText());
         }
