@@ -5,8 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-import java.util.List;
-
 public class TestOtomasyonPage {
 
     public TestOtomasyonPage(){
@@ -42,8 +40,7 @@ public class TestOtomasyonPage {
     @FindBy(xpath = "//span[text()='Logout']")
     public WebElement logoutButonu;
 
-    @FindBy(xpath = "//*[@*='product-box my-2  py-1']")
-    public List<WebElement> bulunanUrunElementleriList;
+
 
     @FindBy(xpath = " //div[@class=' heading-sm mb-4']")
     public WebElement urunSayfasindaUrunIsimElementi;
