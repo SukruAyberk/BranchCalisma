@@ -26,8 +26,6 @@ public class TestOtomasyonPage {
     @FindBy(xpath = "//span[text()='Logout']")
     public WebElement logoutButonu;
 
-
-
     @FindBy(xpath = " //div[@class=' heading-sm mb-4']")
     public WebElement urunSayfasindaUrunIsimElementi;
 

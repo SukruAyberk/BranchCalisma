@@ -8,7 +8,6 @@ public class TestSelcuk {
     @Test
     public void blablaTest(){
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
-
     }
     
 }
