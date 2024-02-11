@@ -14,5 +14,6 @@ public class TestHalil {
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
 
         testOtomasyonPage.testBar.sendKeys("phone" + Keys.ENTER);
+        System.out.println("Ben kod bilmeyen");
     }
 }
