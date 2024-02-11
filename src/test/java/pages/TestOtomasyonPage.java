@@ -14,15 +14,6 @@ public class TestOtomasyonPage {
     }
 
 
-    /*
-        Page class'lari locate yapmak
-        ve varsa login islemi gibi calistigimiz sayfaya ozel fonksiyonlara ait basit method'lar
-        olusturmak icin kullanilir
-
-        Page class'larinin en buyuk yeniligi
-        driver.findElement() veya driver.findElements() method'lari yerine
-        @FindBy notosyonu kullanmasidir
-     */
 
     @FindBy(id = "global-search")
     public WebElement aramaKutusu;
