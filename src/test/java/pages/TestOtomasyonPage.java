@@ -13,11 +13,6 @@ public class TestOtomasyonPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-
-
-    @FindBy(id = "global-search")
-    public WebElement aramaKutusu;
-
     @FindBy(xpath = "(//a[@class='e-cart'])[1]")
     public WebElement accountLinki;
 
@@ -50,4 +45,7 @@ public class TestOtomasyonPage {
 
     @FindBy(xpath = "//*[@*='product-count-text']")
     public WebElement bulunanUrunSayisiElementi;
+  
+    @FindBy(xpath = "//input[@id='global-search']")
+    public WebElement testBar;
 }
