@@ -13,6 +13,6 @@ public class TestHalil {
     public void test(){
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
 
-        testOtomasyonPage.aramaKutusu.sendKeys("phone" + Keys.ENTER);
+        testOtomasyonPage.testBar.sendKeys("phone" + Keys.ENTER);
     }
 }
