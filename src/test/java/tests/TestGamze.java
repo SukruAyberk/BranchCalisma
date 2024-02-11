@@ -10,6 +10,8 @@ public class TestGamze {
 
         Driver.getDriver().quit();
 
+        System.out.println("bir şey olmaz efenim");
+
     }
 
 
