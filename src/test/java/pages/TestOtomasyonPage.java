@@ -11,20 +11,6 @@ public class TestOtomasyonPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-
-    /*
-        Page class'lari locate yapmak
-        ve varsa login islemi gibi calistigimiz sayfaya ozel fonksiyonlara ait basit method'lar
-        olusturmak icin kullanilir
-
-        Page class'larinin en buyuk yeniligi
-        driver.findElement() veya driver.findElements() method'lari yerine
-        @FindBy notosyonu kullanmasidir
-     */
-
-    @FindBy(id = "global-search")
-    public WebElement aramaKutusu;
-
     @FindBy(xpath = "(//a[@class='e-cart'])[1]")
     public WebElement accountLinki;
 
@@ -56,4 +42,7 @@ public class TestOtomasyonPage {
 
     @FindBy(xpath = "//*[@*='product-count-text']")
     public WebElement bulunanUrunSayisiElementi;
+  
+    @FindBy(xpath = "//input[@id='global-search']")
+    public WebElement testBar;
 }
