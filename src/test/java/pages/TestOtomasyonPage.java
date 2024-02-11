@@ -5,27 +5,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-import java.util.List;
-
 public class TestOtomasyonPage {
 
     public TestOtomasyonPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
-
-    /*
-        Page class'lari locate yapmak
-        ve varsa login islemi gibi calistigimiz sayfaya ozel fonksiyonlara ait basit method'lar
-        olusturmak icin kullanilir
-
-        Page class'larinin en buyuk yeniligi
-        driver.findElement() veya driver.findElements() method'lari yerine
-        @FindBy notosyonu kullanmasidir
-     */
-
-    @FindBy(id = "global-search")
-    public WebElement aramaKutusu;
 
     @FindBy(xpath = "(//a[@class='e-cart'])[1]")
     public WebElement accountLinki;
@@ -42,8 +26,7 @@ public class TestOtomasyonPage {
     @FindBy(xpath = "//span[text()='Logout']")
     public WebElement logoutButonu;
 
-    @FindBy(xpath = "//*[@*='product-box my-2  py-1']")
-    public List<WebElement> bulunanUrunElementleriList;
+
 
     @FindBy(xpath = " //div[@class=' heading-sm mb-4']")
     public WebElement urunSayfasindaUrunIsimElementi;
@@ -59,4 +42,7 @@ public class TestOtomasyonPage {
 
     @FindBy(xpath = "//*[@*='product-count-text']")
     public WebElement bulunanUrunSayisiElementi;
+  
+    @FindBy(xpath = "//input[@id='global-search']")
+    public WebElement testBar;
 }
